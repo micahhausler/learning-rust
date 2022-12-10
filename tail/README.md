@@ -1,4 +1,16 @@
 # Tail
 
-I'm learning Rust, and this is an implemenatation of `tail` in Rust.
-No, its not perfect, its really just here for me to learn, and maybe for you to learn something too.
+This is an implemenatation of `tail` in Rust. It supports a configurable number of lines and filename to read.
+
+```
+$ ./target/debug/tail -h
+Usage: tail [OPTIONS] [FILENAME]
+
+Arguments:
+  [FILENAME]  The filename to read
+
+Options:
+  -n, --number <NUMBER>  Number of lines to read [default: 10]
+  -h, --help             Print help information
+  -V, --version          Print version information
+```
